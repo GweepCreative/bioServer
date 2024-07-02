@@ -1,4 +1,8 @@
 type User = {
+  isActive: boolean;
+  role: "user" | "mod" | "admin" | "banned";
+  isBanned: boolean;
+  banReason?: string | null;
   userid: string;
   createdAt: Date;
   updatedAt: Date;
